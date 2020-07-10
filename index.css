@@ -1,0 +1,9 @@
+body {
+  font: normal 9.25pt sans-serif;
+}
+
+div[contenteditable="true"] {
+  border: 1px solid silver;
+  margin: 1ex;
+  padding: 1ex;
+}

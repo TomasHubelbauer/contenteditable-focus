@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ContentEditable Focus</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>ContentEditable Focus</h1>
+    <div id="editor1Div" contenteditable="true">This div is content editable.</div>
+    <div id="editor2Div" contenteditable="true">This div is separate from the first one and is also content editable.</div>
+    <p>Go ahead and edit one, then click or tab to the other to try and give it focus.</p>
+    <p>This works fine, maybe with the slight downside of the caret jumping to the start of the editor, not the end.</p>
+    <p>Now, let's wrap these in HTML custom elements:</p>
+    <demo-editor>This is a custom component editor.</demo-editor>
+    <demo-editor>This is another custom component editor.</demo-editor>
+    <p>Focusing between them should glitch out, but it doesn't in this repro… :thinking:</p>
+    <p>It does in my project Paper though. Looks like the culprit is elsewhere.</p>
+  </body>
+</html>
